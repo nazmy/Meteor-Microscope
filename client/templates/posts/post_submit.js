@@ -17,12 +17,7 @@ Template.postSubmit.events({
 				alert ('This link has been posted before');
 			}
 
-			//Router.go('postPage',{_id:result._id});
+			Router.go('postPage',{_id:result._id});
 		});
-			/*Change to display list of post and move the code here so that the client 
-			will not wait until the postInsert Method call finish (return result)
-			(For the sake of testing latency compensation)
-			*/
-			Router.go('postsLists');
 	}
 });
